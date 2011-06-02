@@ -12,7 +12,7 @@ CREATE TABLE [dbo].[prj_form28](
 	[yymm] [varchar](5) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
 	[code2] [varchar](20) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
 	[department] [varchar](100) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
-	[job_course] [varchar](200) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[job_lesson] [varchar](200) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
 	[lesson] [varchar](200) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
 	[lesson_category] [varchar](200) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
 	[start_date] [datetime] NULL,
