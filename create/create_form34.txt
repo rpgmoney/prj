@@ -1,32 +1,22 @@
-﻿USE [web]
+﻿USE [web5]
 GO
-/****** 物件:  Table [dbo].[prj_form30]    指令碼日期: 06/02/2011 20:51:07 ******/
+/****** 物件:  Table [dbo].[prj_form34]    指令碼日期: 06/02/2011 20:51:07 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 SET ANSI_PADDING ON
 GO
-CREATE TABLE [dbo].[prj_form30](
-	[id] [varchar](11) COLLATE Chinese_Taiwan_Stroke_CI_AS NOT NULL CONSTRAINT [DF_prj_form30_id]  DEFAULT (newid()),
+CREATE TABLE [dbo].[prj_form34](
+	[id] [varchar](11) COLLATE Chinese_Taiwan_Stroke_CI_AS NOT NULL CONSTRAINT [DF_prj_form34_id]  DEFAULT (newid()),
 	[yymm] [varchar](5) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
 	[code2] [varchar](20) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
 	[department] [varchar](100) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
-	[lesson] [varchar](200) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
-	[category] [varchar](100) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
-	[purpose1] [varchar](5) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
-	[purpose2] [varchar](5) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
-	[purpose3] [varchar](5) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[group_name] [varchar](200) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[group_category] [varchar](5) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[join_count] [varchar](10) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
 	[start_date] [datetime] NULL,
-	[expire_date] [datetime] NULL,
-	[c_name] [varchar](200) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
-	[c_source] [varchar](200) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
-	[service_unit] [varchar](200) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
-	[service_target] [varchar](200) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
-	[service_count] [varchar](5) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
-	[join_count] [varchar](5) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
-	[fund1] [varchar](10) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
-	[fund2] [varchar](10) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[explain] [text] COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
 	[remark] [text] COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
 	[status] [varchar](1) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
 	[deptno] [varchar](10) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,

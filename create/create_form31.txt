@@ -1,0 +1,57 @@
+﻿USE [web5]
+GO
+/****** 物件:  Table [dbo].[prj_form31]    指令碼日期: 06/02/2011 20:51:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[prj_form31](
+	[id] [varchar](11) COLLATE Chinese_Taiwan_Stroke_CI_AS NOT NULL CONSTRAINT [DF_prj_form31_id]  DEFAULT (newid()),
+	[yymm] [varchar](5) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[code2] [varchar](20) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[department] [varchar](100) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[lesson] [varchar](200) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[teaching_category] [varchar](5) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[language] [varchar](200) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[lesson_category] [varchar](5) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[teacher] [varchar](100) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[teacher_unit] [varchar](100) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[total_time] [varchar](100) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[language_total_time] [varchar](100) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[teaching_count] [varchar](10) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[remark] [text] COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[status] [varchar](1) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[deptno] [varchar](10) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[deptname] [varchar](100) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[sid] [varchar](10) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[name] [varchar](50) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[email] [varchar](200) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[checkdate] [datetime] NULL,
+	[boss2id] [varchar](10) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[boss2name] [varchar](50) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[boss2email] [varchar](200) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[boss2checkdate] [datetime] NULL,
+	[boss2comment] [text] COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[boss2state] [varchar](1) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[boss1id] [varchar](10) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[boss1name] [varchar](50) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[boss1email] [varchar](200) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[boss1checkdate] [datetime] NULL,
+	[boss1comment] [text] COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[boss1state] [varchar](1) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[belongdept] [varchar](10) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[managerid] [varchar](10) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[managername] [varchar](50) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[managercheckdate] [datetime] NULL,
+	[managerstate] [varchar](1) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[managercomment] [text] COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[inituid] [varchar](10) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[initdate] [datetime] NULL,
+	[modifyuid] [varchar](10) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[modifydate] [datetime] NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF
