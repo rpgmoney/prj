@@ -1,0 +1,29 @@
+﻿USE [web5]
+GO
+/****** 物件:  Table [dbo].[prj_funds]    指令碼日期: 06/02/2011 20:51:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[prj_funds](
+	[id] uniqueidentifier NOT NULL DEFAULT (newid()),
+	[code] [varchar](3) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[planname] [varchar](500) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[code1] [varchar](10) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[planname1] [varchar](500) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[code2] [varchar](20) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[planname2] [varchar](100) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[activity_name] [varchar](500) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[department] [varchar](5) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[subtotal] [varchar](100) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[enable] [varchar](1) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[inituid] [varchar](10) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[initdate] [datetime] NULL,
+	[modifyuid] [varchar](10) COLLATE Chinese_Taiwan_Stroke_CI_AS NULL,
+	[modifydate] [datetime] NULL
+) 
+
+GO
+SET ANSI_PADDING OFF
